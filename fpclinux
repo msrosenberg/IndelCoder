@@ -1,0 +1,1 @@
+fpc -Mdelphi -Fu/usr/lib/fpc/2.2.2/units/i386-linux -oindelcoder indelcoder.dpr

@@ -1,0 +1,30 @@
+#NEXUS
+BEGIN DATA;
+  DIMENSIONS NTAX=5 NCHAR=30;
+  FORMAT MISSING=? DATATYPE=DNA GAP=- EQUATE="0=A 1=C";
+  OPTIONS GAPMODE=MISSING;
+MATRIX
+A     ?AAAAATTTTTGGGGGCCCCC?00000000
+B     ?AAAA-TTTT-GGGG-CCCC??11100000
+C     ?????AT---TG---GC---CA00011100
+D     ??AAAATTTTTGGGGGCCCCCA00000000
+E     AA----TTTTT------CCC??-0-0-011
+;
+END;
+
+BEGIN SETS;
+  CHARSET Original=1-22;
+  CHARSET InDelChar=23-30;
+END;
+
+[ Indel Character        Sites
+  ---------------   ---------------
+          23             6 - 6
+          24            11 - 11
+          25            16 - 16
+          26             8 - 10
+          27            13 - 15
+          28            18 - 20
+          29             3 - 6
+          30            12 - 17
+]

@@ -1,0 +1,13 @@
+#NEXUS 
+
+Begin data;
+	Dimensions ntax=5 nchar=22;
+	Format datatype=dna gap=-;
+	Matrix
+A -AAAAATTTTTGGGGGCCCCC-
+B -AAAA-TTTT-GGGG-CCCC--
+C -----AT---TG---GC---CA
+D --AAAATTTTTGGGGGCCCCCA
+E AA----TTTTT------CCC--
+	;
+End;
